@@ -1,0 +1,176 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+	/* background:url(img/Background.png) repeat-x fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden; */
+  background-color: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+}
+
+ul{
+  padding: 0;
+}
+
+
+/*nome no topo*/
+.conteudoTopo{
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 25px;
+	/* background:url(img/BackgroundTopo.png); */
+  background-color: #FF7514;
+  background-size: cover;
+  background-position: center;
+}
+.nomeTopo{
+  font-size: 32px;
+  text-align: center;
+  padding: 6px 0 6px 0;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+
+/*botão*/
+.conteudoMenu{
+  width: 98%;
+  margin: 20px auto;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+#linkMenuSimulador{
+  background: #FF7514;
+}
+#linkMenuCalendario{
+  background: #004284;
+}
+.linkMenu{
+  margin: auto 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50px;
+  text-decoration: none;
+  color:#ffffff;
+  padding: 10px;
+  font-size: 18px;
+  width: 30%;
+}
+.nomeBotao{
+  font-weight: bolder;
+}
+.imgBotao{
+  height: 16px;
+  padding: 0px 10px;
+}
+
+
+/*conteudo*/
+.calendario{
+  max-width: 950px;
+  margin: 2.5px auto;
+  padding: 15px 40px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border-radius: 8px;
+}
+
+.conteudoMes{
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0);
+}
+#mes{
+  text-align: center;
+  border-radius: 3px;
+  background-color: #8E9794;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.conteudoEvento{
+  margin: 6px;
+  border: #BFC8C5 solid 2px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.evento{
+  display: grid;
+  grid-template-columns: 40px 1fr 90px;
+  list-style: none;
+  text-align: center;
+  padding: 6px 5px;
+}
+.evento:nth-child(even){
+  background-color: #f2f2f2;
+}
+.evento:last-child{
+  border-radius: 0px 0px 10px 10px;
+}
+.descricaoEvento{
+  font-size: 18px;
+}
+#dia{
+  /* color: #ffb300; */
+  color: #f1a900;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#descricao{
+  color: #595D5C;
+  text-align: left;
+}
+#hora{
+  color:  #00bfff;;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+/* ----- Responsive CSS ----- */
+
+@media only screen and (max-width: 740px){
+  .calendario{
+    grid-template-columns: 100%;
+    width: 100%;
+    padding: 3px; 
+  }
+  .evento{
+    display: grid;
+    grid-template-columns: 30px 1fr 100px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .evento{
+    grid-template-columns: 40px 1fr 55px;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  #dia{
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  #descricao{
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="icon" href="https://unigranrio.blackboard.com/bbcswebdav/institution/nead_wd/templates/2020/v3.7/favicon.ico"type="image/x-icon"> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>UNISUAM - EAD | Simulador</title>
+</head>
+
+<body>
+  <section class="conteudoTopo" id="conteudoTopo">
+    <h2 class="nomeTopo" alt="Simulador 3 Avaliações - EAD">Simulador 3 Avaliações - EAD</h2>
+  </section>
+
+  <section class="conteudoMenu">
+    <a class="linkMenu" id="linkMenuCalendario" href="javascript:history.back()"><img class="imgBotao" id="imgBotaoCalendario"
+        src="../img/iconeCalendario.png"><span class="nomeBotao">Calendário</span></a>
+    <a class="linkMenu" id="linkMenuSimulador" href="index.html"><img class="imgBotao" id="imgBotaoSimulador"
+        src="../img/iconeCalculadora.png"><span class="nomeBotao">Simulador</span></a>
+  </section>
+
+  <section class="conteudoSimulador" id="conteudoSimulador">
+
+    <div class="divisaoAV" id="divisaoParte1">
+      <div class="conteudoNomeAV">
+        <h3 class="conteudoNomeAV" id="conteudoNomeParte1"><span class="nomeAV" id="nomeParte1">Média</span></h3>
+      </div>
+      <div class="conteudoAV" id="conteudoParte1">
+        <label class="nomeAP" for="atividade1">Escrita e Reflexão: <input class="notaAP" id="atividade1" name="atividade1" type="text" value="" title="Vale até 2 pontos" autofocus/></label>
+        <label class="nomeAP" for="atividade2">Questionário: <input class="notaAP" id="atividade2" name="atividade2" type="text" value="" title="Vale até 2,5 pontos"/></label>
+        <label class="nomeAP" for="atividade3">Prova Regular (presencial): <input class="notaAP" id="atividade3" name="atividade3" type="text" value="" title="Vale até 5,5 pontos"/></label>
+
+        <input class="btCalcular" id="btCalcularSimulador" type="button" onclick="calcularParte1()" value="Calcular"/>
+      </div>
+      <div class="conteudoMediaAV" id="conteudoMediaParte1">
+        <label class="conteudoNomeAP" id="conteudoResultadoParte1"><span class="nomeAP" id="resultadoNomeParte1">Média:
+            <input class="notaAP" id="resultadoParte1" name="resultadoParte1" type="text" value=""
+              readonly="readonly" /></span></label>
+      </div>
+    </div>
+
+    <div class="divisaoAV" id="divisaoMediaFinal1Situacao">
+      <div class="conteudoNomeAV">
+        <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal1Situacao"><span class="nomeAV" id="nomeMediaFinal1Situacao">Situação</span></h3>
+      </div>
+      <div class="conteudoAV" id="conteudoMediaFinal1Situacao">
+        <label class="situacao" for="situacaoMediaFinal1"><input class="nomeSituacao" id="situacaoMediaFinal1" type="text" value="" readonly="readonly" /></label>
+        
+      </div>
+    </div>  
+
+    <div class="divisaoAV" id="divisaoMediaFinal2">
+      <div class="conteudoNomeAV">
+        <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal2"><span class="nomeAV" id="nomeMediaFinal2">Média Final</span></h3>
+      </div>
+      <div class="conteudoAV" id="conteudoMediaFinal2">
+        <label class="nomeAP" for="mediaFinal1" id="nomemediaFinal1">Média: <input class="notaAP" id="mediaFinal1" name="mediaFinal1" type="text" value=""/></label>
+        <label class="nomeAP" for="atividade4" id="nomeatividade4">Prova Substitutiva: <input class="notaAP" id="atividade4" name="atividade4" type="text" value="" title="Vale até 10 pontos"/></label>
+
+        <input class="btCalcular" id="btCalcularSimulador" type="button" onclick="calcularMediaFinal2()" value="Calcular" />
+      </div>
+      <div class="conteudoMediaAV" id="conteudoMediaFinal2">
+        <label class="conteudoNomeAP" id="conteudoResultadoMediaFinal2"><span class="nomeAP" id="resultadoNomeMediaFinal2">MédiaFinal: <input class="notaAP" id="resultadoMediaFinal2" name="resultadoMediaFinal2" type="text" value="" readonly="readonly" /></span></label>
+      </div>
+    </div>
+
+    <div class="divisaoAV" id="divisaoMediaFinal2Situacao">
+      <div class="conteudoNomeAV">
+        <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal2Situacao"><span class="nomeAV" id="nomeMediaFinal2Situacao">Situação</span></h3>
+      </div>
+      <div class="conteudoAV" id="conteudoMediaFinal2Situacao">
+        <label class="situacao" for="situacaoMediaFinal2"><input class="nomeSituacao" id="situacaoMediaFinal2" type="text" value="" readonly="readonly" /></label>
+      </div>
+    </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="conteudoDelete">
+      <input class="botaoDelete" id="botaoDelete" type="button" onclick="deletar()" value="Limpar" />
+    </div>
+  </section>
+
+
+  <section class="conteudoInformacoes" id="conteudoInformacoes">
+    <div class="conteudoBotao">
+      <a class="botaoInfo" id="botao"><span class="material-icons" id="botaoInfo">info</span></a>
+    </div>
+
+    <div class="conteudoDecricao" id="conteudoDecricao">
+      <div id="conteudoNomeInformacao">
+        <h4 id="nomeInfomacoes">Regras de Cálculo</h4>
+      </div>
+      <div class="conteudoBotaoFechar">
+        <a class="botaoInfoFechar" id="botaoFechar"><span class="material-icons" id="botaoInfoFechar">close</span></a>
+      </div>
+
+      <div class="conteudoDescricaoAvaliacao">
+        <table class="tabelaRegrasCalculo3AVS">
+          <thead>
+            <tr class="titulo">
+              <th class="nomeTitulo">Avaliação</th>
+              <th class="nomeTitulo">Instrumento</th>
+              <th class="nomeTitulo">Nota</th>
+              <th class="nomeTitulo">Cálculo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="conteudoTabelaAV" id="conteudoTabelaAV1">
+              <th rowspan="3">Média</th>
+              <td>Escrita e Reflexão</td>
+              <td>0 a 2 pontos</td>
+              <td rowspan="3" class="colunaCalculo">Escrita e Reflexão + Questionário + Prova Regular (presencial)</td>
+            </tr>
+            <tr class="conteudoTabelaAV" id="conteudoTabelaAV1">
+              <td>Questionário</td>
+              <td>0 a 2,5 pontos</td>
+            </tr>
+            <tr class="conteudoTabelaAV" id="conteudoTabelaAV1">
+              <td>Prova Regular (presencial)</td>
+              <td>0 a 5,5 pontos</td>
+            </tr>
+
+            <tr class="conteudoTabelaAV" id="conteudoTabelaAV2">
+              <th>Média Final</th>
+              <td>Prova Substitutiva</td>
+              <td>0 a 5,5 pontos</td>
+              <td class="colunaCalculo">Escrita e Reflexão + Questionário + Prova Substitutiva</td>
+            </tr>
+        </table>
+
+        <div class="RegrasAprovacao3AVS">
+          <p><b>Média =</b> Escrita e Reflexão + Questionário + Prova Regular (presencial).</p>
+          <br>
+          <p>Igual ou maior que 6,0: Aprovado(a);</p>
+          <p>Igual ou menor que 5,9: deve realizar a prova substitutiva.</p>
+          <br>
+          <br>
+          <p><b>Média com Prova Substitutiva =</b> Escrita e Reflexão + Questionário + Prova Substitutiva.</p>
+          <br>
+          <p>Substituiu a nota da prova regular, vale a maior nota.</p>
+          <!-- <br>
+          <br>
+          <p class="descricaoObs">*Neste período ocorrerá de forma remota</p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="script.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
