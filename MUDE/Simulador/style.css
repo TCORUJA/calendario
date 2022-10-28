@@ -92,7 +92,7 @@ ul{
   margin: auto;
 }
 .nomeAV{
-  width: 150px;
+  width: 175px;
   background-color: #8E9794;
   padding: 10px 20px;
   border-radius: 3px;
@@ -133,11 +133,11 @@ ul{
 
 
 
-#conteudoResultadoParte1, #conteudoResultadoParte2, #conteudoResultadoMediaFinal1, #conteudoResultadoMediaFinal2{
+#conteudoResultadoParte1, #conteudoResultadoParte2, #conteudoResultadoParte3, #conteudoResultadoParte4, #conteudoResultadoMediaFinal1, #conteudoResultadoMediaFinal2{
   display: flex;
   margin: auto;
 } 
-#resultadoNomeParte1, #resultadoNomeParte2, #resultadoNomeMediaFinal1, #resultadoNomeMediaFinal2{
+#resultadoNomeParte1, #resultadoNomeParte2, #resultadoNomeParte3, #resultadoNomeParte4, #resultadoNomeMediaFinal1, #resultadoNomeMediaFinal2{
   margin-top:auto;
   margin-bottom:auto;
   border-radius: 3px;
@@ -146,11 +146,11 @@ ul{
   text-align: center;
   width: 210px;
 }
-#resultadoParte1, #resultadoParte2, #resultadoMediaFinal1, #resultadoMediaFinal2{
+#resultadoParte1, #resultadoParte2, #resultadoParte3, #resultadoParte4, #resultadoMediaFinal1, #resultadoMediaFinal2{
   background-color: #E5E8E7;
   border: #E5E8E7 1px solid;
 }
-#resultadoParte1, #resultadoParte2, #resultadoMediaFinal1, #resultadoMediaFinal2, #Parte1, #Parte2{
+#resultadoParte1, #resultadoParte2, #resultadoParte3, #resultadoParte4, #resultadoMediaFinal1, #resultadoMediaFinal2, #Parte1, #Parte2, #Parte3, #Parte4{
   width: 60px;
 }
 
@@ -209,10 +209,10 @@ display: none;
    display: grid;
    grid-template-columns: 1fr;
   }
-  .conteudoAV#conteudoParte1, .conteudoAV#conteudoParte2, .conteudoAV#conteudoMediaFinal1,.conteudoAV#conteudoMediaFinal2{
+  .conteudoAV#conteudoParte1, .conteudoAV#conteudoParte2, .conteudoAV#conteudoParte3, .conteudoAV#conteudoParte4, .conteudoAV#conteudoMediaFinal1,.conteudoAV#conteudoMediaFinal2{
     margin: 10px;
   }
-  #conteudoParte1Situacao, #conteudoParte2Situacao, #conteudoMediaFinal1Situacao, #conteudoMediaFinal2Situacao{
+  #conteudoParte1Situacao, #conteudoParte2Situacao, #conteudoParte3Situacao, #conteudoParte4Situacao, #conteudoMediaFinal1Situacao, #conteudoMediaFinal2Situacao{
     margin-left: auto;
     margin-right: auto;
   }

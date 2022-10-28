@@ -135,18 +135,7 @@ function calcularMediaFinal2(){
 }
 
 function deletar(){
-    /*--Limpar campos de médias e situação--*/
-    document.getElementById('atividade1').value = "";
-    document.getElementById('atividade2').value = "";
-    document.getElementById('atividade3').value = "";
-    document.getElementById('atividade4').value = "";
-    document.getElementById('resultadoParte1').value = "";
-    document.getElementById('mediaFinal1').value = "";
-    document.getElementById('situacaoMediaFinal1').value = "";
-    document.getElementById('resultadoMediaFinal2').value = "";
-    document.getElementById('situacaoMediaFinal2').value = "";
-    /* document.getElementById('divisaoMediaFinal2').style.display = "none";
-    document.getElementById('divisaoMediaFinal2Situacao').style.display = "none"; */
+    document.location.reload(true);
 }
 
 
