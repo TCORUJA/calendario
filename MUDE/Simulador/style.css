@@ -176,6 +176,9 @@ input{
   background: #f1a900;
 }
 
+.nomeRecuperacao4, .nomeRecuperacao8, .nomeRecuperacao12, .nomeRecuperacao16, .nomeRecuperacao19{
+  display: none;
+}
 
 .botaoDelete,.btCalcular{
   color:#ffffff;

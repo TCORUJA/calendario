@@ -59,7 +59,6 @@ function calcularParte1() {
         window.alert("Verifique na Competência 1 se a nota de Recuperação está entre 0 e 5");
     }
 
-
     var resultadoParte1 = parseFloat(document.getElementById('resultadoParte1').value.replace(",", ".").replace("", "0"));
     var resultadoParte2 = parseFloat(document.getElementById('resultadoParte2').value.replace(",", ".").replace("", "0"));
     var resultadoParte3 = parseFloat(document.getElementById('resultadoParte3').value.replace(",", ".").replace("", "0"));
@@ -68,6 +67,18 @@ function calcularParte1() {
     var soma = resultadoParte1 + resultadoParte2 + resultadoParte3 + resultadoParte4;
     var somaDecimal = Math.trunc(soma * 100) / 100;
     document.getElementById('mediaFinal1').value = somaDecimal.toString().replace(".", ",");
+
+
+    
+    if (atividade1 < 5 || atividade2 < 5 || atividade3 < 5){
+        var nomeRecuperacao = document.getElementById('nomeRecuperacao4');
+        nomeRecuperacao.classList.remove('nomeRecuperacao4');
+    }
+    else{
+        var nomeRecuperacao = document.getElementById('nomeRecuperacao4');
+        nomeRecuperacao.classList.add('nomeRecuperacao4');
+    }
+
 }
 
 function calcularParte2() {
@@ -138,6 +149,18 @@ function calcularParte2() {
     var soma = resultadoParte1 + resultadoParte2 + resultadoParte3 + resultadoParte4;
     var somaDecimal = Math.trunc(soma * 100) / 100;
     document.getElementById('mediaFinal1').value = somaDecimal.toString().replace(".", ",");
+
+
+    
+    if (atividade1 < 5 || atividade2 < 5 || atividade3 < 5){
+        var nomeRecuperacao = document.getElementById('nomeRecuperacao8');
+        nomeRecuperacao.classList.remove('nomeRecuperacao8');
+    }
+    else{
+        var nomeRecuperacao = document.getElementById('nomeRecuperacao8');
+        nomeRecuperacao.classList.add('nomeRecuperacao8');
+    }
+
 }
 
 function calcularParte3() {
@@ -208,6 +231,18 @@ function calcularParte3() {
     var soma = resultadoParte1 + resultadoParte2 + resultadoParte3 + resultadoParte4;
     var somaDecimal = Math.trunc(soma * 100) / 100;
     document.getElementById('mediaFinal1').value = somaDecimal.toString().replace(".", ",");
+
+
+    
+    if (atividade1 < 5 || atividade2 < 5 || atividade3 < 5){
+        var nomeRecuperacao = document.getElementById('nomeRecuperacao12');
+        nomeRecuperacao.classList.remove('nomeRecuperacao12');
+    }
+    else{
+        var nomeRecuperacao = document.getElementById('nomeRecuperacao12');
+        nomeRecuperacao.classList.add('nomeRecuperacao12');
+    }
+
 }
 
 function calcularParte4() {
@@ -278,6 +313,18 @@ function calcularParte4() {
     var soma = resultadoParte1 + resultadoParte2 + resultadoParte3 + resultadoParte4;
     var somaDecimal = Math.trunc(soma * 100) / 100;
     document.getElementById('mediaFinal1').value = somaDecimal.toString().replace(".", ",");
+
+
+    
+    if (atividade1 < 5 || atividade2 < 5 || atividade3 < 5){
+        var nomeRecuperacao = document.getElementById('nomeRecuperacao16');
+        nomeRecuperacao.classList.remove('nomeRecuperacao16');
+    }
+    else{
+        var nomeRecuperacao = document.getElementById('nomeRecuperacao16');
+        nomeRecuperacao.classList.add('nomeRecuperacao16');
+    }
+
 }
 
 
@@ -295,7 +342,19 @@ function calcularMediaFinal1() {
         var somaDecimal = (Math.trunc(soma * 100) / 1000) / 2;
 
         document.getElementById('resultadoMediaFinal1').value = somaDecimal.toString().replace(".", ",");
-    }    /* 
+    } 
+    if (atividade3 < 100){
+        var nomeRecuperacao = document.getElementById('nomeRecuperacao19');
+        nomeRecuperacao.classList.remove('nomeRecuperacao19');
+    }
+    else{
+        var nomeRecuperacao = document.getElementById('nomeRecuperacao19');
+        nomeRecuperacao.classList.add('nomeRecuperacao19');
+    }
+    
+    
+    
+    /* 
     else if (atividade1 > 5 && atividade2 > 5 && atividade3 > 5) {
         window.alert("Verifique na Competência 4 se as notas de: \n\n\Desafio está entre 0 e 5\n\Relatório está entre 0 e 5\n\Questionário está entre 0 e 5");
     }
