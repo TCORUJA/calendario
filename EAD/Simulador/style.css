@@ -87,6 +87,14 @@ ul{
   padding: 20px;  
   background-color: #ffffff79;
 }
+#divisaoParte1{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#divisaoMediaFinal1Situacao{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 .conteudoNomeAV{
   display: flex;
   margin: auto;

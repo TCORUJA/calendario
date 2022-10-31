@@ -87,6 +87,14 @@ ul{
   padding: 20px;  
   background-color: #ffffff79;
 }
+#divisaoParte1{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#divisaoMediaFinal1Situacao{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 .conteudoNomeAV{
   display: flex;
   margin: auto;
@@ -176,7 +184,7 @@ input{
   background: #f1a900;
 }
 
-.nomeRecuperacao4, .nomeRecuperacao8, .nomeRecuperacao12, .nomeRecuperacao16, .nomeRecuperacao19{
+.nomeRecuperacao4, .nomeRecuperacao8, .nomeRecuperacao12, .nomeRecuperacao16, .nomeRecuperacao18, .nomeAtividade19, .nomeAtividade18{
   display: none;
 }
 
