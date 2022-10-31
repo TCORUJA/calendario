@@ -15,10 +15,12 @@ function calcularParte1() {
             /* Ocultar recuperação */
             var nomeRecuperacao = document.getElementById('nomeRecuperacao4');
             nomeRecuperacao.classList.add('nomeRecuperacao4');
+            document.getElementById('atividade4').value = "";
 
             /* Calculo sem recuperação */
             var soma = atividade1 + atividade2 + atividade3;
             var somaDecimal = Math.trunc(soma * 100) / 100;
+            
         }
         else{
             /* Exibir recuperação */
@@ -101,6 +103,7 @@ function calcularParte2() {
             /* Ocultar recuperação */
             var nomeRecuperacao = document.getElementById('nomeRecuperacao8');
             nomeRecuperacao.classList.add('nomeRecuperacao8');
+            document.getElementById('atividade8').value = "";
 
             /* Calculo sem recuperação */
             var soma = atividade1 + atividade2 + atividade3;
@@ -187,6 +190,7 @@ function calcularParte3() {
             /* Ocultar recuperação */
             var nomeRecuperacao = document.getElementById('nomeRecuperacao12');
             nomeRecuperacao.classList.add('nomeRecuperacao12');
+            document.getElementById('atividade12').value = "";
 
             /* Calculo sem recuperação */
             var soma = atividade1 + atividade2 + atividade3;
@@ -273,6 +277,7 @@ function calcularParte4() {
             /* Ocultar recuperação */
             var nomeRecuperacao = document.getElementById('nomeRecuperacao16');
             nomeRecuperacao.classList.add('nomeRecuperacao16');
+            document.getElementById('atividade16').value = "";
 
             /* Calculo sem recuperação */
             var soma = atividade1 + atividade2 + atividade3;
@@ -356,30 +361,55 @@ function calcularMediaFinal1() {
     if (atividade1 <= 60 && atividade2 <= 40 && atividade3 <= 100 && atividade4 <= 100) {
 
         var avaliacaoCompetencia = atividade1 + atividade2;
+        var nomeAtividade1 = document.getElementById('nomeAtividade18');
+        var nomeAtividade2 = document.getElementById('nomeAtividade19');
 
-        if (avaliacaoCompetencia >= 70){
-            var nomeAtividade1 = document.getElementById('nomeAtividade18');
-            var nomeAtividade2 = document.getElementById('nomeAtividade19');
+        /* if (avaliacaoCompetencia >= 70){
+            nomeAtividade1.classList.remove('nomeAtividade18');
 
 
             if(atividade3 != "" && atividade3 < 100){
-                nomeAtividade2.classList.remove('nomeAtividade19');
+                nomeAtividade1.classList.remove('nomeAtividade18');
                 var soma = atividade1 + atividade2 + atividade3 + atividade4 - Math.min(atividade3, atividade4);
             }
             else{
                 nomeAtividade1.classList.remove('nomeAtividade18');
                 nomeAtividade2.classList.add('nomeAtividade19');
+                document.getElementById('atividade19').value = "";
 
                 var soma = atividade1 + atividade2 + atividade3;
             }
             var somaDecimal = (Math.trunc(soma * 100) / 1000) / 2;
         }
         else{
+            nomeAtividade1.classList.add('nomeAtividade18');
+            nomeAtividade1.classList.add('nomeAtividade19');
             var soma = 0
             var somaDecimal = (Math.trunc(soma * 100) / 1000) / 2;            
-        }
+        } */
 
-        document.getElementById('resultadoMediaFinal1').value = somaDecimal.toString().replace(".", ",");
+        if (avaliacaoCompetencia < 70){
+            document.getElementById('resultadoMediaFinal1').value = "";
+            document.getElementById('situacaoMediaFinal1').value = "Reprovado na avaliação de comptência";
+            document.getElementById('situacaoMediaFinal1').style.color = "#c52010";
+            nomeAtividade1.classList.add('nomeAtividade18');
+            document.getElementById('atividade18').value = "";
+            nomeAtividade2.classList.add('nomeAtividade19');
+            document.getElementById('atividade19').value = "";
+        }
+        else{
+            nomeAtividade1.classList.remove('nomeAtividade18');
+            if(atividade3 == ""){
+                document.getElementById('resultadoMediaFinal1').value = "";
+            }
+            else if(atividade3 < 100){
+                nomeAtividade2.classList.remove('nomeAtividade19');
+                
+                var soma = atividade1 + atividade2 + atividade3 + atividade4 - Math.min(atividade3, atividade4);
+                var somaDecimal = (Math.trunc(soma * 100) / 1000) / 2;
+                document.getElementById('resultadoMediaFinal1').value = somaDecimal.toString().replace(".", ",");
+            }
+        }
     }
     else if (atividade1 > 60 && atividade2 > 40 && atividade3 > 100) {
         window.alert("Verifique na Competência 4 se as notas de: \n\n\Média Competências está entre 0 e 60\n\Projeto está entre 0 e 40\n\Prova Integradora está entre 0 e 100");
@@ -421,20 +451,24 @@ function calcularMediaFinal1() {
     var resultadoDecimal = Math.trunc(resultado * 100) / 100;
     var avaliacaoCompetencia = atividade1 + atividade2;
 
-    if (avaliacaoCompetencia >=0 && avaliacaoCompetencia < 70){
+
+    /* if (avaliacaoCompetencia >=0 && avaliacaoCompetencia < 70){
         document.getElementById('situacaoMediaFinal1').value = "Reprovado na avaliação de comptência";
         document.getElementById('situacaoMediaFinal1').style.color = "#c52010";
     }
     else if (atividade3 == "" && atividade4 == ""){
         document.getElementById('situacaoMediaFinal1').value = "";      
     }
-    else if (resultadoDecimal >= 6) {
+    else  */if (resultadoDecimal >= 6) {
         document.getElementById('situacaoMediaFinal1').value = "Aprovado";
         document.getElementById('situacaoMediaFinal1').style.color = "#55cb50";
     }
-    else {
+    else if (resultadoDecimal < 6) {
         document.getElementById('situacaoMediaFinal1').value = "Reprovado";
         document.getElementById('situacaoMediaFinal1').style.color = "#c52010";
+    }
+    else{
+        document.getElementById('situacaoMediaFinal1').value = "";
     }
 }
 
