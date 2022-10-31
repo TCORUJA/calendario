@@ -19,7 +19,7 @@ function calcularParte1() {
 
             /* Calculo sem recuperação */
             var soma = atividade1 + atividade2 + atividade3;
-            var somaDecimal = Math.trunc(soma * 100) / 100;
+            var somaDecimal = Math.round(soma * 10) / 10;
             
         }
         else{
@@ -35,7 +35,7 @@ function calcularParte1() {
             else{
                 var soma = atividade1 + atividade2 + atividade3 + atividade4 - Math.min(atividade1, atividade2, atividade3, atividade4);
             }
-            var somaDecimal = Math.trunc(soma * 100) / 100;
+            var somaDecimal = Math.round(soma * 10) / 10;
         }
         
         /* Média do calculo com ou sem recuperação */
@@ -84,7 +84,7 @@ function calcularParte1() {
     var resultadoParte4 = parseFloat(document.getElementById('resultadoParte4').value.replace(",", ".").replace("", "0"));
 
     var soma = resultadoParte1 + resultadoParte2 + resultadoParte3 + resultadoParte4;
-    var somaDecimal = Math.trunc(soma * 100) / 100;
+    var somaDecimal = Math.round(soma * 10) / 10;
     document.getElementById('mediaFinal1').value = somaDecimal.toString().replace(".", ",");
 }
 
@@ -107,7 +107,7 @@ function calcularParte2() {
 
             /* Calculo sem recuperação */
             var soma = atividade1 + atividade2 + atividade3;
-            var somaDecimal = Math.trunc(soma * 100) / 100;
+            var somaDecimal = Math.round(soma * 10) / 10;
         }
         else{
             /* Exibir recuperação */
@@ -122,7 +122,7 @@ function calcularParte2() {
             else{
                 var soma = atividade1 + atividade2 + atividade3 + atividade4 - Math.min(atividade1, atividade2, atividade3, atividade4);
             }
-            var somaDecimal = Math.trunc(soma * 100) / 100;
+            var somaDecimal = Math.round(soma * 10) / 10;
         }
         
         /* Média do calculo com ou sem recuperação */
@@ -171,7 +171,7 @@ function calcularParte2() {
     var resultadoParte4 = parseFloat(document.getElementById('resultadoParte4').value.replace(",", ".").replace("", "0"));
 
     var soma = resultadoParte1 + resultadoParte2 + resultadoParte3 + resultadoParte4;
-    var somaDecimal = Math.trunc(soma * 100) / 100;
+    var somaDecimal = Math.round(soma * 10) / 10;
     document.getElementById('mediaFinal1').value = somaDecimal.toString().replace(".", ",");
 }
 
@@ -194,7 +194,7 @@ function calcularParte3() {
 
             /* Calculo sem recuperação */
             var soma = atividade1 + atividade2 + atividade3;
-            var somaDecimal = Math.trunc(soma * 100) / 100;
+            var somaDecimal = Math.round(soma * 10) / 10;
         }
         else{
             /* Exibir recuperação */
@@ -209,7 +209,7 @@ function calcularParte3() {
             else{
                 var soma = atividade1 + atividade2 + atividade3 + atividade4 - Math.min(atividade1, atividade2, atividade3, atividade4);
             }
-            var somaDecimal = Math.trunc(soma * 100) / 100;
+            var somaDecimal = Math.round(soma * 10) / 10;
         }
         
         /* Média do calculo com ou sem recuperação */
@@ -258,7 +258,7 @@ function calcularParte3() {
     var resultadoParte4 = parseFloat(document.getElementById('resultadoParte4').value.replace(",", ".").replace("", "0"));
 
     var soma = resultadoParte1 + resultadoParte2 + resultadoParte3 + resultadoParte4;
-    var somaDecimal = Math.trunc(soma * 100) / 100;
+    var somaDecimal = Math.round(soma * 10) / 10;
     document.getElementById('mediaFinal1').value = somaDecimal.toString().replace(".", ",");
 }
 
@@ -281,7 +281,7 @@ function calcularParte4() {
 
             /* Calculo sem recuperação */
             var soma = atividade1 + atividade2 + atividade3;
-            var somaDecimal = Math.trunc(soma * 100) / 100;
+            var somaDecimal = Math.round(soma * 10) / 10;
         }
         else{
             /* Exibir recuperação */
@@ -296,7 +296,7 @@ function calcularParte4() {
             else{
                 var soma = atividade1 + atividade2 + atividade3 + atividade4 - Math.min(atividade1, atividade2, atividade3, atividade4);
             }
-            var somaDecimal = Math.trunc(soma * 100) / 100;
+            var somaDecimal = Math.round(soma * 10) / 10;
         }
         
         /* Média do calculo com ou sem recuperação */
@@ -345,7 +345,7 @@ function calcularParte4() {
     var resultadoParte4 = parseFloat(document.getElementById('resultadoParte4').value.replace(",", ".").replace("", "0"));
 
     var soma = resultadoParte1 + resultadoParte2 + resultadoParte3 + resultadoParte4;
-    var somaDecimal = Math.trunc(soma * 100) / 100;
+    var somaDecimal = Math.round(soma * 10) / 10;
     document.getElementById('mediaFinal1').value = somaDecimal.toString().replace(".", ",");
 }
 
@@ -384,7 +384,7 @@ function calcularMediaFinal1() {
                 nomeAtividade2.classList.remove('nomeAtividade19');
                 
                 var soma = atividade1 + atividade2 + atividade3 + atividade4 - Math.min(atividade3, atividade4);
-                var somaDecimal = (Math.trunc(soma * 100) / 1000) / 2;
+                var somaDecimal = (Math.round(soma * 10) / 100) / 2;
                 document.getElementById('resultadoMediaFinal1').value = somaDecimal.toString().replace(".", ",");
             }
         }
@@ -426,7 +426,7 @@ function calcularMediaFinal1() {
 
     /*--Condição da média do aluno--*/
     var resultado = parseFloat(document.getElementById('resultadoMediaFinal1').value);
-    var resultadoDecimal = Math.trunc(resultado * 100) / 100;
+    var resultadoDecimal = Math.round(resultado * 10) / 10;
     var avaliacaoCompetencia = atividade1 + atividade2;
 
 
@@ -452,6 +452,7 @@ function calcularMediaFinal1() {
 
 function deletar() {
     document.location.reload(true);
+    localStorage.clear();
 }
 
 
@@ -468,5 +469,3 @@ $('#botaoInfoFechar').click(function () {
     $('.conteudoBotao').toggleClass('conteudoBotaoNone');
     $('.conteudoSimulador').toggleClass('conteudoSimuladorNone');
 });
-
-
