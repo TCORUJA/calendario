@@ -364,30 +364,6 @@ function calcularMediaFinal1() {
         var nomeAtividade1 = document.getElementById('nomeAtividade18');
         var nomeAtividade2 = document.getElementById('nomeAtividade19');
 
-        /* if (avaliacaoCompetencia >= 70){
-            nomeAtividade1.classList.remove('nomeAtividade18');
-
-
-            if(atividade3 != "" && atividade3 < 100){
-                nomeAtividade1.classList.remove('nomeAtividade18');
-                var soma = atividade1 + atividade2 + atividade3 + atividade4 - Math.min(atividade3, atividade4);
-            }
-            else{
-                nomeAtividade1.classList.remove('nomeAtividade18');
-                nomeAtividade2.classList.add('nomeAtividade19');
-                document.getElementById('atividade19').value = "";
-
-                var soma = atividade1 + atividade2 + atividade3;
-            }
-            var somaDecimal = (Math.trunc(soma * 100) / 1000) / 2;
-        }
-        else{
-            nomeAtividade1.classList.add('nomeAtividade18');
-            nomeAtividade1.classList.add('nomeAtividade19');
-            var soma = 0
-            var somaDecimal = (Math.trunc(soma * 100) / 1000) / 2;            
-        } */
-
         if (avaliacaoCompetencia < 70){
             document.getElementById('resultadoMediaFinal1').value = "";
             document.getElementById('situacaoMediaFinal1').value = "Reprovado na avaliação de comptência";
@@ -397,10 +373,12 @@ function calcularMediaFinal1() {
             nomeAtividade2.classList.add('nomeAtividade19');
             document.getElementById('atividade19').value = "";
         }
-        else{
+        else if (avaliacaoCompetencia >= 70){
             nomeAtividade1.classList.remove('nomeAtividade18');
+            document.getElementById('situacaoMediaFinal1').value = "";
             if(atividade3 == ""){
                 document.getElementById('resultadoMediaFinal1').value = "";
+                nomeAtividade2.classList.add('nomeAtividade19');
             }
             else if(atividade3 < 100){
                 nomeAtividade2.classList.remove('nomeAtividade19');
@@ -466,10 +444,10 @@ function calcularMediaFinal1() {
     else if (resultadoDecimal < 6) {
         document.getElementById('situacaoMediaFinal1').value = "Reprovado";
         document.getElementById('situacaoMediaFinal1').style.color = "#c52010";
-    }
+    }/* 
     else{
         document.getElementById('situacaoMediaFinal1').value = "";
-    }
+    } */
 }
 
 function deletar() {
