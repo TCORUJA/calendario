@@ -425,6 +425,11 @@ th,td{
   font-weight: bolder;
 }
 
+.recuo{
+  text-indent: 16px;
+  margin-top: 5px;
+}
+
 @media only screen and (max-width: 555px){
   .tabelaRegrasCalculo3AVS{
     display: block;

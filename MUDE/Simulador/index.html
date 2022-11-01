@@ -110,7 +110,7 @@
         <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal1"><span class="nomeAV" id="nomeMediaFinal1">Média Final</span></h3>
       </div>
       <div class="conteudoAV" id="conteudoMediaFinal1">
-        <label class="nomeAP" for="mediaFinal1" id="nomemediaFinal1">Média Competências: <input class="notaAP" id="mediaFinal1" name="mediaFinal1" type="text" value="" title="Vale até 60 pontos"/></label>
+        <label class="nomeAP" for="mediaFinal1" id="nomemediaFinal1">Média das Competências: <input class="notaAP" id="mediaFinal1" name="mediaFinal1" type="text" value="" title="Vale até 60 pontos"/></label>
         <label class="nomeAP" for="atividade17" id="nomeAtividade17">Projeto: <input class="notaAP" id="atividade17" name="atividade17" type="text" value="" title="Vale até 40 pontos"/></label>
         <label class="nomeAP nomeAtividade18" id="nomeAtividade18" for="atividade18" >Prova Integradora: <input class="notaAP" id="atividade18" name="atividade18" type="text" value="" title="Vale até 100 pontos"/></label>
         <label class="nomeAP nomeAtividade19" id="nomeAtividade19" for="atividade19" >Prova Substitutiva: <input class="notaAP" id="atividade19" name="atividade19" type="text" value="" title="Vale até 100 pontos"/></label>
@@ -166,41 +166,63 @@
           </thead>
           <tbody>
             <tr class="conteudoTabelaAV" id="conteudoTabelaAV1">
-              <th rowspan="3">Média</th>
-              <td>Escrita e Reflexão</td>
-              <td>0 a 2 pontos</td>
-              <td rowspan="3" class="colunaCalculo">Escrita e Reflexão + Questionário + Prova Regular (presencial)</td>
+              <th rowspan="4">Média das Competências<br>1 a 4</th>
+              <td>Desafio</td>
+              <td>0 a 5 pontos</td>
+              <td rowspan="4" class="colunaCalculo">Desafio + Relatorio + Questionário + Recuperação</td>
+            </tr>
+            <tr class="conteudoTabelaAV" id="conteudoTabelaAV1">
+              <td>Relatorio</td>
+              <td>0 a 5 pontos</td>
             </tr>
             <tr class="conteudoTabelaAV" id="conteudoTabelaAV1">
               <td>Questionário</td>
-              <td>0 a 2,5 pontos</td>
+              <td>0 a 5 pontos</td>
             </tr>
             <tr class="conteudoTabelaAV" id="conteudoTabelaAV1">
-              <td>Prova Regular (presencial)</td>
-              <td>0 a 5,5 pontos</td>
+              <td>Recuperação<span class="obs">¹</span></td>
+              <td>0 a 5 pontos</td>
             </tr>
 
             <tr class="conteudoTabelaAV" id="conteudoTabelaAV2">
-              <th>Média Final</th>
-              <td>Prova Substitutiva</td>
-              <td>0 a 5,5 pontos</td>
-              <td class="colunaCalculo">Escrita e Reflexão + Questionário + Prova Substitutiva</td>
+              <th rowspan="2">Avaliação de Competência</th>
+              <td>Média das Competências</td>
+              <td>0 a 60 pontos</td>
+              <td class="colunaCalculo"  rowspan="2">Média das Competências + Projeto / 10</td>
+            </tr>
+            <tr class="conteudoTabelaAV" id="conteudoTabelaAV2">
+              <td>Projeto</td>
+              <td>0 a 40 pontos</td>
+            </tr>
+
+            <tr class="conteudoTabelaAV" id="conteudoTabelaAV1">
+              <th rowspan="3">Média Final</th>
+              <td>Avaliação de Competência</td>
+              <td>0 a 100 pontos</td>
+              <td class="colunaCalculo"  rowspan="3">Avaliação de Competência + Prova Integradora / 10<br><br><b>OU</b><br><br>Avaliação de Competência + Prova Substitutiva / 10</td>
+            </tr>
+            <tr class="conteudoTabelaAV" id="conteudoTabelaAV1">
+              <td>Prova Integradora</td>
+              <td>0 a 100 pontos</td>
+            </tr>
+            <tr class="conteudoTabelaAV" id="conteudoTabelaAV1">
+              <td>Prova Substitutiva<span class="obs">²</span></td>
+              <td>0 a 100 pontos</td>
             </tr>
         </table>
 
         <div class="RegrasAprovacao3AVS">
-          <p><b>Média =</b> Escrita e Reflexão + Questionário + Prova Regular (presencial).</p>
-          <br>
-          <p>Igual ou maior que 6,0: Aprovado(a);</p>
-          <p>Igual ou menor que 5,9: deve realizar a prova substitutiva.</p>
+          <p><b>Avaliação de Competência = </b>Média das Competências + Projeto.</p>
+          <p class="recuo">Igual ou menor que 6,9: Reprovado.</p>
           <br>
           <br>
-          <p><b>Média com Prova Substitutiva =</b> Escrita e Reflexão + Questionário + Prova Substitutiva.</p>
+          <p><b>Média Final = </b>Avaliação de Competência + Prova Integradora / 10<b> ou </b>Avaliação de Competência + Prova Substitutiva / 10.</p>
+          <p class="recuo">Igual ou maior que 6,0: Aprovado.</p>
+          <p class="recuo">Igual ou menor que 5,9: Reprovado.</p>
           <br>
-          <p>Substituiu a nota da prova regular, vale a maior nota.</p>
-          <!-- <br>
           <br>
-          <p class="descricaoObs">*Neste período ocorrerá de forma remota</p> -->
+          <p class="descricaoObs"><b>1 </b>Liberado caso a o valor do desafio, relatório ou questionário for menor que 5,0 pontos. Em caso de liberação da recuperação, a atividade de menor valor é substituida e o somatório total das atividades só pode alcançar no máximo 10,5 pontos.</p>
+          <p class="descricaoObs"><b>2 </b>Realizado somente se o aluno possuir uma nota inferior a 100 pontos na Prova Integradora <b>(Prevalece a maior nota)</b>.</p>
         </div>
       </div>
     </div>
