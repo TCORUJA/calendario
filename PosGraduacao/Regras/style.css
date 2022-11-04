@@ -1,0 +1,43 @@
+.sistemaAvaliacao{
+  max-width: 950px;
+  margin: 2.5px auto;
+  padding: 15px 0px;
+  border-radius: 8px;
+}
+#conteudoSistemaAvaliacao1{
+  display: flex;
+  margin: auto;
+}
+.descricaoSistemaAvaliacao{
+  width: 250px;
+  margin: 50px;
+  padding: 20px;
+}
+.nomeTitulo{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.corpo{
+  text-align: center;
+}
+
+
+
+#botaoAtecao{
+  position: absolute;
+  margin-top: -55px;
+  margin-left: -50px;
+  font-size: 55px;
+  background-color: black;
+  border-radius: 50px;
+  padding: 10px;
+}
+.nomeDescricaoSistemaAvaliacao{
+  padding-left: 30px;
+}
+
+
+#conteudoSistemaAvaliacao2{
+  padding: 20px 10px;
+}
