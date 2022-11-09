@@ -1,0 +1,43 @@
+/* Cores */
+
+.evento:nth-child(even), .descricaoCorpo:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.bgBranco{
+  background: #ffffff;
+}
+.bgPreto{
+  background: #000000;
+}
+.bgCinzaClaro1{
+  background: #8E9794;
+}
+.bgCinzaClaro2{
+  background: #BFC8C5;
+}
+.bgCinzaClaro3{
+  background: #d0d0d0;
+}
+.bgLaranja{
+  background: #FF7514;
+}
+.bgAzul{
+  background: #004284;
+}
+.txtBranco{
+  color: #ffffff;
+}
+.txtCinza{
+  color: #5d5959;
+}
+.txtAmarelo{
+  color: #ffb300;
+  /* color: #f1a900; */
+}
+.txtAzulClaro1{
+  color: #4A90E2;
+}
+.bdCinzaClaro2{
+  border: #BFC8C5 solid 1px;
+}
