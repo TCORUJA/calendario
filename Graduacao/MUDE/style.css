@@ -75,20 +75,24 @@ ul{
 
 /*conteudo*/
 .calendario{
-  max-width: 950px;
   margin: 2.5px auto;
   padding: 15px 40px;
-  display: grid;
-  grid-template-columns: 20% 80%;
+  display: flex;
   border-radius: 8px;
 }
 
 
 
 
+.conteudoCalendario{
+  width: 100%;
+}
 
-table{
-  margin: auto 135px;
+.tabelaCalendario{
+  background-color: #ffffff79;
+  border-radius: 15px;
+  margin: 10px auto;
+  padding: 20px;
 }
 tbody{
   width: 100%;
@@ -99,7 +103,7 @@ tbody{
 }
 tr{
   display: grid;
-  grid-template-columns: 350px 120px 120px;
+  grid-template-columns: 400px 120px 120px;
 }
 .titulo{
   font-weight: bold;
@@ -119,5 +123,12 @@ tr{
 }
 .dataInicio, .dataFim{
   color: #f1a900;
+  font-weight: bold;
+}
+.atividade .descricao{
+  font-weight: 550;
+}
+.atividade .dataInicio, .atividade  .dataFim{
+  color: #3FC3B5;
   font-weight: bold;
 }

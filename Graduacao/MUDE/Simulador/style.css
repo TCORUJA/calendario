@@ -403,40 +403,46 @@ display: none;
 
 
 th,td{
-  color: #ffffff;
   text-align: center;
   padding: 10px;
   border-radius: 5px;
 }
 .nomeTitulo{
   background-color: #004284;
+  color: #ffffff;
 }
 
 .conteudoTabelaAV{
-  font-weight: 490;
+  font-weight:500;
 }
-#conteudoTabelaAV1, #conteudoTabelaAVS{
-  background-color: #8E9494;
+.conteudoTabelaAV1{
+  background-color: #E5E8E7;
+  color: #303030;
 }
-#conteudoTabelaAV2{
-  background-color: #595D5C;
+.conteudoTabelaAV2{
+  background-color: #BFC8C5;
+  color: #303030;
 }
 
-.RegrasAprovacao3AVS{
-  padding-top: 20px;
-  color: #004284;
+.RegrasAprovacao{
+  margin-top: 20px;
+  padding: 20px 5px;
+  color: #303030;
+  border: 1px solid #3FC3B5;
+  border-radius: 5px;
 }
-.RegrasAprovacao3AVS p{
+.RegrasAprovacao p{
   padding: 2px;
 }
 
 .descricaoObs{
-  color: #FF7514;
+  color: #303030;
   font-size: 18px;
 }
 .obs{
   font-size: 17px;
   color: #f1a900;
+  font-weight: bold;
 }
 
 .recuo{
@@ -451,7 +457,7 @@ th,td{
     width: 85%;
     position: absolute;
   }
-  .RegrasAprovacao3AVS{
+  .RegrasAprovacao{
     margin-top: 450px;
   }
 }
