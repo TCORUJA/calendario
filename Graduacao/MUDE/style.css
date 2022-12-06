@@ -88,29 +88,36 @@ ul{
 
 
 table{
-  background-color:#ffffff
+  margin: auto 135px;
 }
 tbody{
   width: 100%;
   margin: auto;
   border: #FF7514 1px solid;
   width: 100%;
+  background-color:#ffffff;
 }
 tr{
   display: grid;
-  grid-template-columns: 500px 150px 150px;
+  grid-template-columns: 350px 120px 120px;
 }
 .titulo{
   font-weight: bold;
-  background-color: rgb(106, 106, 106);
+  background-color: #8E9794;
   color: #ffffff;
 }
 .evento, .nomeTitulo{ 
   text-align: center;
   padding: 5px;
 }
-.evento:nth-child(even){
+.evento:nth-child(odd){
   background-color: #dbdbdb;
-}.nomee{
+}
+.descricao{
+  color: #303030;
   text-align: left;
+}
+.dataInicio, .dataFim{
+  color: #f1a900;
+  font-weight: bold;
 }
