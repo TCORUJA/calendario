@@ -4,7 +4,7 @@
 }
 
 body{
-	background:url(img/background/Background2.png) repeat-x fixed;
+	background:url(img/background/Background9.png) repeat-x fixed;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -76,7 +76,7 @@ ul{
 /*conteudo*/
 .calendario{
   margin: 2.5px auto;
-  padding: 15px 40px;
+  padding: 15px;
   display: flex;
   border-radius: 8px;
 }
@@ -86,6 +86,9 @@ ul{
 
 .conteudoCalendario{
   width: 100%;
+  display: block;
+  overflow-x: scroll;
+
 }
 
 .tabelaCalendario{
@@ -97,7 +100,6 @@ ul{
 tbody{
   width: 100%;
   margin: auto;
-  border: #FF7514 1px solid;
   width: 100%;
   background-color:#ffffff;
 }
@@ -122,13 +124,13 @@ tr{
   text-align: left;
 }
 .dataInicio, .dataFim{
-  color: #f1a900;
+  color: #FF7514;
   font-weight: bold;
 }
 .atividade .descricao{
   font-weight: 550;
 }
 .atividade .dataInicio, .atividade  .dataFim{
-  color: #3FC3B5;
+  color: #004284;
   font-weight: bold;
 }
