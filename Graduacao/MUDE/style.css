@@ -88,7 +88,12 @@ ul{
   width: 100%;
   display: block;
   overflow-x: scroll;
-
+}
+.conteudoCalendario::-webkit-scrollbar {
+  width: 12px;
+}
+.conteudoCalendario::-webkit-scrollbar-track {
+  background: #ffffff00;
 }
 
 .tabelaCalendario{

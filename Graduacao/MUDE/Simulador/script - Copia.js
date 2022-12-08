@@ -3,7 +3,7 @@
 function calcularParte01() {
     /* Chamar notas das avaliações colocadas pelo aluno */
     var atividade1 = parseFloat(document.getElementById('atividade01').value.replace(",", ".").replace("", "0"));
-    var atividade2 = parseFloat(document.getElementById('atividade02').value.replace(",", ".").replace("", "0"));
+    var atividade2 = parseFloat(document.getElementById('atividade02').value.replace(",", ".").replace("", "0"));;
 
     /* Verificar se o aluno precisa de recuperação ou não */
     if (atividade1 <= 5.5 && atividade2 <= 7) {
@@ -51,19 +51,29 @@ function calcularParte01() {
     var resultadoParte5 = parseFloat(document.getElementById('resultadoParte05').value.replace(",", ".").replace("", "0"));
     var resultadoParte6 = parseFloat(document.getElementById('resultadoParte06').value.replace(",", ".").replace("", "0"));
     var resultadoParte7 = parseFloat(document.getElementById('resultadoParte07').value.replace(",", ".").replace("", "0"));
+
     
-    if(resultadoParte3 == ""){
+    if(resultadoParte3 == "" && resultadoParte6 == ""){
         var parte123 = resultadoParte1 + resultadoParte2;
-    }
-    else{
-        var parte123 = resultadoParte3;
-    }
-    if(resultadoParte6 == ""){
         var parte456 = resultadoParte4 + resultadoParte5;
     }
-    else{
+    else if(resultadoParte3 != "" && resultadoParte6 != ""){
+        var parte123 = resultadoParte3;
         var parte456 = resultadoParte6;
     }
+    else if(resultadoParte3 != ""){
+        var parte123 = resultadoParte3;
+    }
+    else if(resultadoParte3 == ""){
+        var parte123 = resultadoParte1 + resultadoParte2;
+    }
+    else if(resultadoParte6 != ""){
+        var parte456 = resultadoParte6;
+    }
+    else if(resultadoParte6 == ""){
+        var parte456 = resultadoParte4 + resultadoParte5;
+    }
+
 
     var soma = parte123 + parte456 + resultadoParte7;    
     var somaDecimal = Math.round(soma * 10) / 10;
@@ -128,71 +138,27 @@ function calcularParte02() {
     var resultadoParte5 = parseFloat(document.getElementById('resultadoParte05').value.replace(",", ".").replace("", "0"));
     var resultadoParte6 = parseFloat(document.getElementById('resultadoParte06').value.replace(",", ".").replace("", "0"));
     var resultadoParte7 = parseFloat(document.getElementById('resultadoParte07').value.replace(",", ".").replace("", "0"));
+
     
-    if(resultadoParte3 == ""){
+    if(resultadoParte3 == "" && resultadoParte6 == ""){
         var parte123 = resultadoParte1 + resultadoParte2;
-    }
-    else{
-        var parte123 = resultadoParte3;
-    }
-    if(resultadoParte6 == ""){
         var parte456 = resultadoParte4 + resultadoParte5;
     }
-    else{
+    else if(resultadoParte3 != "" && resultadoParte6 != ""){
+        var parte123 = resultadoParte3;
         var parte456 = resultadoParte6;
     }
-
-    var soma = parte123 + parte456 + resultadoParte7;    
-    var somaDecimal = Math.round(soma * 10) / 10;
-    document.getElementById('atividade14').value = somaDecimal.toString().replace(".", ",");
-}
-
-function calcularParte03() {
-    /* Chamar notas das avaliações colocadas pelo aluno */
-    var atividade1 = parseFloat(document.getElementById('atividade05').value.replace(",", ".").replace("", "0"));
-    var atividade2 = parseFloat(document.getElementById('resultadoParte01').value.replace(",", ".").replace("", "0"));;
-    var atividade3 = parseFloat(document.getElementById('resultadoParte02').value.replace(",", ".").replace("", "0"));;
-
-    /* Verificar se o aluno precisa de recuperação ou não */
-    if (atividade1 <= 7.5) {
-        if (atividade1 + atividade2 + atividade3 < 17.5) {
-            var soma = atividade1 + atividade2 + atividade3;
-            var somaDecimal = Math.round(soma * 10) / 10;
-        }
-        else if (atividade1 + atividade2 + atividade3 >= 17.5) {
-            var soma = 17.5;
-            var somaDecimal = Math.round(soma * 10) / 10;
-        }
-
-        /* Média do calculo com ou sem recuperação */
-        document.getElementById('resultadoParte03').value = somaDecimal.toString().replace(".", ",");
-    }
-
-    /* Verificar se os valores colocados estão dentro do permitido para a avaliação */
-    else if (atividade1 > 7.5) {
-        window.alert("Verifique se a nota da Recuperação 1 está entre 0 e 7,5");
-    }
-
-    /* Soma das notas das competências  e projetos*/
-    var resultadoParte1 = parseFloat(document.getElementById('resultadoParte01').value.replace(",", ".").replace("", "0"));
-    var resultadoParte2 = parseFloat(document.getElementById('resultadoParte02').value.replace(",", ".").replace("", "0"));
-    var resultadoParte3 = parseFloat(document.getElementById('resultadoParte03').value.replace(",", ".").replace("", "0"));
-    var resultadoParte4 = parseFloat(document.getElementById('resultadoParte04').value.replace(",", ".").replace("", "0"));
-    var resultadoParte5 = parseFloat(document.getElementById('resultadoParte05').value.replace(",", ".").replace("", "0"));
-    var resultadoParte6 = parseFloat(document.getElementById('resultadoParte06').value.replace(",", ".").replace("", "0"));
-    var resultadoParte7 = parseFloat(document.getElementById('resultadoParte07').value.replace(",", ".").replace("", "0"));
-    
-    if(resultadoParte3 == ""){
-        var parte123 = resultadoParte1 + resultadoParte2;
-    }
-    else{
+    else if(resultadoParte3 != ""){
         var parte123 = resultadoParte3;
     }
-    if(resultadoParte6 == ""){
-        var parte456 = resultadoParte4 + resultadoParte5;
+    else if(resultadoParte3 == ""){
+        var parte123 = resultadoParte1 + resultadoParte2;
     }
-    else{
+    else if(resultadoParte6 != ""){
         var parte456 = resultadoParte6;
+    }
+    else if(resultadoParte6 == ""){
+        var parte456 = resultadoParte4 + resultadoParte5;
     }
 
     var soma = parte123 + parte456 + resultadoParte7;    
@@ -257,18 +223,27 @@ function calcularParte04() {
     var resultadoParte5 = parseFloat(document.getElementById('resultadoParte05').value.replace(",", ".").replace("", "0"));
     var resultadoParte6 = parseFloat(document.getElementById('resultadoParte06').value.replace(",", ".").replace("", "0"));
     var resultadoParte7 = parseFloat(document.getElementById('resultadoParte07').value.replace(",", ".").replace("", "0"));
+
     
-    if(resultadoParte3 == ""){
+    if(resultadoParte3 == "" && resultadoParte6 == ""){
         var parte123 = resultadoParte1 + resultadoParte2;
-    }
-    else{
-        var parte123 = resultadoParte3;
-    }
-    if(resultadoParte6 == ""){
         var parte456 = resultadoParte4 + resultadoParte5;
     }
-    else{
+    else if(resultadoParte3 != "" && resultadoParte6 != ""){
+        var parte123 = resultadoParte3;
         var parte456 = resultadoParte6;
+    }
+    else if(resultadoParte3 != ""){
+        var parte123 = resultadoParte3;
+    }
+    else if(resultadoParte3 == ""){
+        var parte123 = resultadoParte1 + resultadoParte2;
+    }
+    else if(resultadoParte6 != ""){
+        var parte456 = resultadoParte6;
+    }
+    else if(resultadoParte6 == ""){
+        var parte456 = resultadoParte4 + resultadoParte5;
     }
 
     var soma = parte123 + parte456 + resultadoParte7;    
@@ -333,18 +308,78 @@ function calcularParte05() {
     var resultadoParte5 = parseFloat(document.getElementById('resultadoParte05').value.replace(",", ".").replace("", "0"));
     var resultadoParte6 = parseFloat(document.getElementById('resultadoParte06').value.replace(",", ".").replace("", "0"));
     var resultadoParte7 = parseFloat(document.getElementById('resultadoParte07').value.replace(",", ".").replace("", "0"));
+
     
-    if(resultadoParte3 == ""){
+    if(resultadoParte3 == "" && resultadoParte6 == ""){
         var parte123 = resultadoParte1 + resultadoParte2;
-    }
-    else{
-        var parte123 = resultadoParte3;
-    }
-    if(resultadoParte6 == ""){
         var parte456 = resultadoParte4 + resultadoParte5;
     }
-    else{
+    else if(resultadoParte3 != "" && resultadoParte6 != ""){
+        var parte123 = resultadoParte3;
         var parte456 = resultadoParte6;
+    }
+    else if(resultadoParte3 != ""){
+        var parte123 = resultadoParte3;
+    }
+    else if(resultadoParte3 == ""){
+        var parte123 = resultadoParte1 + resultadoParte2;
+    }
+    else if(resultadoParte6 != ""){
+        var parte456 = resultadoParte6;
+    }
+    else if(resultadoParte6 == ""){
+        var parte456 = resultadoParte4 + resultadoParte5;
+    }
+
+    var soma = parte123 + parte456 + resultadoParte7;    
+    var somaDecimal = Math.round(soma * 10) / 10;
+    document.getElementById('atividade14').value = somaDecimal.toString().replace(".", ",");
+}
+
+
+function calcularParte03() {
+    /* Chamar notas das avaliações colocadas pelo aluno */
+    var atividade1 = parseFloat(document.getElementById('atividade05').value.replace(",", ".").replace("", "0"));
+    var atividade2 = parseFloat(document.getElementById('resultadoParte01').value.replace(",", ".").replace("", "0"));;
+    var atividade3 = parseFloat(document.getElementById('resultadoParte02').value.replace(",", ".").replace("", "0"));;
+
+    /* Verificar se o aluno precisa de recuperação ou não */
+    if (atividade1 <= 7.5) {
+        if (atividade1 + atividade2 + atividade3 < 17.5) {
+            var soma = atividade1 + atividade2 + atividade3;
+            var somaDecimal = Math.round(soma * 10) / 10;
+        }
+        else if (atividade1 + atividade2 + atividade3 >= 17.5) {
+            var soma = 17.5;
+            var somaDecimal = Math.round(soma * 10) / 10;
+        }
+
+        /* Média do calculo com ou sem recuperação */
+        document.getElementById('resultadoParte03').value = somaDecimal.toString().replace(".", ",");
+    }
+
+    /* Verificar se os valores colocados estão dentro do permitido para a avaliação */
+    else if (atividade1 > 7.5) {
+        window.alert("Verifique se a nota da Recuperação 1 está entre 0 e 7,5");
+    }
+
+    /* Soma das notas das competências  e projetos*/
+    var resultadoParte1 = parseFloat(document.getElementById('resultadoParte01').value.replace(",", ".").replace("", "0"));
+    var resultadoParte2 = parseFloat(document.getElementById('resultadoParte02').value.replace(",", ".").replace("", "0"));
+    var resultadoParte3 = parseFloat(document.getElementById('resultadoParte03').value.replace(",", ".").replace("", "0"));
+    var resultadoParte4 = parseFloat(document.getElementById('resultadoParte04').value.replace(",", ".").replace("", "0"));
+    var resultadoParte5 = parseFloat(document.getElementById('resultadoParte05').value.replace(",", ".").replace("", "0"));
+    var resultadoParte6 = parseFloat(document.getElementById('resultadoParte06').value.replace(",", ".").replace("", "0"));
+    var resultadoParte7 = parseFloat(document.getElementById('resultadoParte07').value.replace(",", ".").replace("", "0"));
+    
+    var recuperacao1 = parseFloat(document.getElementById('resultadoParte07').value.replace(",", ".").replace("", "0"));
+    var recuperacao2 = document.getElementById('atividade10').value;
+    
+    if(recuperacao1 != ""){
+        var parte123 = resultadoParte3;
+    }
+    else{
+        var parte123 = resultadoParte1 + resultadoParte2;
     }
 
     var soma = parte123 + parte456 + resultadoParte7;    
@@ -386,18 +421,27 @@ function calcularParte06() {
     var resultadoParte5 = parseFloat(document.getElementById('resultadoParte05').value.replace(",", ".").replace("", "0"));
     var resultadoParte6 = parseFloat(document.getElementById('resultadoParte06').value.replace(",", ".").replace("", "0"));
     var resultadoParte7 = parseFloat(document.getElementById('resultadoParte07').value.replace(",", ".").replace("", "0"));
+
     
-    if(resultadoParte3 == ""){
+    if(resultadoParte3 == "" && resultadoParte6 == ""){
         var parte123 = resultadoParte1 + resultadoParte2;
-    }
-    else{
-        var parte123 = resultadoParte3;
-    }
-    if(resultadoParte6 == ""){
         var parte456 = resultadoParte4 + resultadoParte5;
     }
-    else{
+    else if(resultadoParte3 != "" && resultadoParte6 != ""){
+        var parte123 = resultadoParte3;
         var parte456 = resultadoParte6;
+    }
+    else if(resultadoParte3 != ""){
+        var parte123 = resultadoParte3;
+    }
+    else if(resultadoParte3 == ""){
+        var parte123 = resultadoParte1 + resultadoParte2;
+    }
+    else if(resultadoParte6 != ""){
+        var parte456 = resultadoParte6;
+    }
+    else if(resultadoParte6 == ""){
+        var parte456 = resultadoParte4 + resultadoParte5;
     }
 
     var soma = parte123 + parte456 + resultadoParte7;    
@@ -481,16 +525,16 @@ function calcularMediaFinal01() {
 
     if (atividade1 <= 100 && atividade2 <= 100 && atividade3 <= 100) {
         if (atividade2 < 100 && atividade3 > atividade2) {
-            var soma = (atividade1 + atividade3) / 2;
-            var somaDecimal = Math.round(soma * 10) / 100;
+            var soma = atividade1 + atividade3;
+            var somaDecimal = Math.round(soma * 10) / 10;
         }
         else if (atividade2 > atividade3) {
-            var soma = (atividade1 + atividade2) / 2;
-            var somaDecimal = Math.round(soma * 10) / 100;
+            var soma = atividade1 + atividade2;
+            var somaDecimal = Math.round(soma * 10) / 10;
         }
         else{            
-            var soma = (atividade1 + atividade2) / 2;
-            var somaDecimal = Math.round(soma * 10) / 100;
+            var soma = atividade1 + atividade2;
+            var somaDecimal = Math.round(soma * 10) / 10;
         }
 
         /* Média do calculo com ou sem recuperação */
