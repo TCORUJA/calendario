@@ -1,0 +1,218 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
+
+body{
+	background:url(../img/background/Background2.png) repeat-x fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  /* background-color: #f7f7f7; */
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+}
+
+ul{
+  padding: 8px 0;
+}
+
+
+/*nome no topo*/
+.conteudoTopo{
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 25px;
+	background:url(../img/background/BackgroundTopo2.png);
+  /* background-color: #FF7514; */
+  background-size: cover;
+  background-position: center;
+}
+.nomeTopo{
+  font-size: 32px;
+  text-align: center;
+  padding: 6px 0 6px 0;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+
+/*botão*/
+.conteudoMenu{
+  width: 98%;
+  margin: 20px auto;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+#linkMenuSimulador{
+  background: #004284;
+}
+#linkMenuCalendario{
+  background: #FF7514;
+}
+.linkMenu{
+  margin: auto 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50px;
+  text-decoration: none;
+  color:#ffffff;
+  padding: 10px;
+  font-size: 18px;
+  width: 30%;
+}
+.nomeBotao{
+  font-weight: bolder;
+}
+.imgBotao{
+  height: 16px;
+  padding: 0px 10px;
+}
+
+
+
+/*conteudo*/
+.conteudoAtividade{
+  display: grid;
+  width: 98%;
+  margin: 2.5px auto;
+  padding: 5px 20px 20px 20px;
+}
+
+.conteudoDescricaoAtividades{
+  width: 98%;
+  margin: auto;
+  background-color: #ffffff79;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 15px;
+}
+.conteudoDescricaoAtividade{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  width: 304px;
+  margin: 5px auto;
+  margin-top: 10px;
+  border: 1px solid #f1a900 ;
+}
+
+.trapesio{
+  padding: 5px;
+  font-weight: bold;
+  color: #ffffff00;
+  border-bottom: 30px solid #f1a900;
+  border-right: 25px solid;
+  height: 0px;
+  width: 10vw;
+}
+.nomeAtividade{
+  padding: 5px;
+  font-weight: bold;
+}
+.conteudoNomeAtividade{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.descricaoAtividade{
+  padding: 5px 0px;
+}
+
+
+#conteudoDescricaoAtividade5 .conteudoNomeAtividade{
+  margin-top: -15px;
+  margin-bottom: -10px;
+}
+#conteudoDescricaoAtividade6 .conteudoNomeAtividade{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#conteudoDescricaoAtividade5 .descricaoAtividade{
+  padding: -10px;
+}
+
+
+
+#conteudoDescricaoAtividade7{
+  width: 401px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 670px){
+  .conteudoDescricaoAtividades{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  .conteudoDescricaoAtividade{
+    width: 401px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  #conteudoDescricaoAtividade5 .conteudoNomeAtividade{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #conteudoDescricaoAtividade6 .conteudoNomeAtividade{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #conteudoDescricaoAtividade5 .descricaoAtividade{
+    padding: -10px;
+  }
+  .conteudoDescricaoAtividade{  
+    width: 304px;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 443px){
+  .conteudoDescricaoAtividades{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  .conteudoDescricaoAtividade{
+    width: 200px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  #conteudoDescricaoAtividade5 .conteudoNomeAtividade{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #conteudoDescricaoAtividade6 .conteudoNomeAtividade{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #conteudoDescricaoAtividade5 .descricaoAtividade{
+    padding: -10px;
+  }
+  .conteudoDescricaoAtividade{  
+    width: 200px;
+  }
+  #conteudoDescricaoAtividade7{
+    width: 200px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  
+  
+}
