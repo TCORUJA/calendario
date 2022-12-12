@@ -387,23 +387,25 @@ display: none;
 
 
 th,td{
-  color: #ffffff;
   text-align: center;
   padding: 10px;
   border-radius: 5px;
 }
 .nomeTitulo{
   background-color: #004284;
+  color: #ffffff;
 }
 
 .conteudoTabelaAV{
   font-weight: 490;
 }
-#conteudoTabelaAV1, #conteudoTabelaAVS{
-  background-color: #8E9494;
+.conteudoTabelaAV1{
+  background-color: #E5E8E7;
+  color: #303030;
 }
-#conteudoTabelaAV2{
-  background-color: #595D5C;
+.conteudoTabelaAV2{
+  background-color: #BFC8C5;
+  color: #303030;
 }
 
 .RegrasAprovacao3AVS{
