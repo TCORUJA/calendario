@@ -47,7 +47,7 @@ ul{
   border-radius: 10px;
 }
 #linkMenuSimulador{
-  background: #004284;
+  background: #0F96AE;
 }
 #linkMenuCalendario{
   background: #FF7514;
@@ -181,13 +181,13 @@ input{
   font-size: 18px;
   padding: 5px 10px;
   border-radius: 3px;
-  background: #f1a900;
+  background: #004284;
 }
 
 
 .botaoDelete,.btCalcular{
   color:#ffffff;
-  border: 1px solid #f1a900;
+  border: 1px solid #004284;
   cursor: pointer;
   border-radius: 50px;
 }
@@ -361,7 +361,7 @@ display: none;
 #conteudoNomeInformacao{
   position: absolute;
   top: 0;
-	background:url(../img/background/BackgroundTopo1.png);
+	background:url(../img/background/BackgroundTopo2.png);
   /* background-color: #FF7514; */
   background-size: cover;
   background-position: center;
@@ -408,11 +408,14 @@ th,td{
   color: #303030;
 }
 
-.RegrasAprovacao3AVS{
-  padding-top: 20px;
-  color: #004284;
+.RegrasAprovacao{
+  margin-top: 20px;
+  padding: 20px 5px;
+  color: #303030;
+  border: 1px solid #004284;
+  border-radius: 5px;
 }
-.RegrasAprovacao3AVS p{
+.RegrasAprovacao p{
   padding: 2px;
 }
 
@@ -423,8 +426,8 @@ th,td{
 }
 .obs{
   font-size: 17px;
-  color: #FF7514;
-  font-weight: bolder;
+  color: #004284;
+  font-weight: bold;
 }
 
 .recuo{
