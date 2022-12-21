@@ -50,7 +50,7 @@ ul{
   background: #FF7514;
 }
 #linkMenuCalendario{
-  background: #0F96AE;
+  background: #FF7514;
 }
 .linkMenu{
   margin: auto 20px;
@@ -104,8 +104,8 @@ ul{
 
 .conteudoEvento{
   margin: 6px;
-  border: #BFC8C5 solid 2px;
-  border-radius: 3px;
+  border: #BFC8C5 solid 1px;
+  border-radius: 4px;
   background-color: #ffffff;
 }
 .evento{
@@ -123,7 +123,7 @@ ul{
 }
 #dia{
   /* color: #ffb300; */
-  color: #f1a900;
+  color: #FF7514;
   font-weight: bolder;
   text-align: center;
   margin-top: auto;

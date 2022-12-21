@@ -50,7 +50,7 @@ ul{
   background: #FF7514;
 }
 #linkMenuCalendario{
-  background: #0F96AE;
+  background: #FF7514;
 }
 .linkMenu{
   margin: auto 20px;
@@ -76,7 +76,7 @@ ul{
 /*conteudo*/
 .calendario{
   margin: 2.5px auto;
-  padding: 15px;
+  padding: 0px 15px;
   display: flex;
   border-radius: 8px;
 }
@@ -97,12 +97,11 @@ ul{
 }
 
 .tabelaCalendario{
-  background-color: #ffffff79;
+  /* background-color: #ffffff79; */
   border-radius: 15px;
   margin: 10px auto;
-  padding: 20px;
 }
-tbody{
+.corpoTabela{
   width: 100%;
   margin: auto;
   width: 100%;
@@ -111,6 +110,14 @@ tbody{
 tr{
   display: grid;
   grid-template-columns: 400px 120px 120px;
+  border-left: #BFC8C5 solid 1px;
+  border-right: #BFC8C5 solid 1px;
+}
+tr:first-child{
+  border-top: #BFC8C5 solid 1px;
+}
+tr:last-child{
+  border-bottom: #BFC8C5 solid 1px;
 }
 .titulo{
   font-weight: bold;
@@ -123,6 +130,9 @@ tr{
 }
 .evento:nth-child(odd){
   background-color: #dbdbdb;
+}
+.evento:nth-child(even){
+  background-color: #ffffff;
 }
 .descricao{
   color: #303030;

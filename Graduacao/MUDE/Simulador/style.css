@@ -57,7 +57,7 @@ ul{
   border-radius: 10px;
 }
 #linkMenuSimulador{
-  background: #0F96AE;
+  background: #FF7514;
 }
 #linkMenuCalendario{
   background: #FF7514;
@@ -194,7 +194,7 @@ input{
   font-size: 18px;
   padding: 5px 10px;
   border-radius: 3px;
-  background: #004284;
+  background: #FF7514;
 }
 
 .ocultarRecuperacao{
@@ -203,7 +203,7 @@ input{
 
 .botaoDelete,.btCalcular{
   color:#ffffff;
-  border: 1px solid #004284;
+  border: 1px solid #FF7514;
   cursor: pointer;
   border-radius: 50px;
 }
@@ -323,7 +323,7 @@ display: none;
 
 #botaoInfo{
   font-size: 65px;
-  color: #004284;
+  color: #FF7514;
   border-radius: 400px;
 }
 #botaoInfo:hover{
@@ -334,7 +334,7 @@ display: none;
   position: fixed;
   right: 0;
   bottom: 0;
-  background-color: #004284;
+  background-color: #FF7514;
   border-radius: 500px;
   margin: 5px;
   padding: 3px 5px;
@@ -407,7 +407,7 @@ th,td{
   border-radius: 5px;
 }
 .nomeTitulo{
-  background-color: #004284;
+  background-color: #FF7514;
   color: #ffffff;
 }
 
@@ -427,7 +427,7 @@ th,td{
   margin-top: 20px;
   padding: 20px 5px;
   color: #303030;
-  border: 1px solid #004284;
+  border: 1px solid #FF7514;
   border-radius: 5px;
 }
 .RegrasAprovacao p{
@@ -440,7 +440,7 @@ th,td{
 }
 .obs{
   font-size: 17px;
-  color: #004284;
+  color: #FF7514;
   font-weight: bold;
 }
 
