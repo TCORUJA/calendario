@@ -1,0 +1,151 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+	background:url(img/background/Background.png) repeat-x fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  /* background-color: #f7f7f7; */
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+}
+
+ul{
+  padding: 0;
+}
+
+
+/*nome no topo*/
+.conteudoTopo{
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 25px;
+	background:url(img/background/BackgroundTopo2.png);
+  /* background-color: #FF7514; */
+  background-size: cover;
+  background-position: center;
+}
+.nomeTopo{
+  font-size: 32px;
+  text-align: center;
+  padding: 6px 0 6px 0;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+
+/*botão*/
+.conteudoMenu{
+  width: 98%;
+  margin: 20px auto;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+#linkMenuSimulador{
+  background: #FF7514;
+}
+#linkMenuCalendario{
+  background: #FF7514;
+}
+.linkMenu{
+  margin: auto 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50px;
+  text-decoration: none;
+  color:#ffffff;
+  padding: 10px;
+  font-size: 18px;
+  width: 30%;
+}
+.nomeBotao{
+  font-weight: bolder;
+}
+.imgBotao{
+  height: 16px;
+  padding: 0px 10px;
+}
+
+
+/*conteudo*/
+.calendario{
+  margin: 2.5px auto;
+  padding: 0px 15px;
+  display: flex;
+  border-radius: 8px;
+}
+
+
+
+
+.conteudoCalendario{
+  width: 100%;
+  display: block;
+  overflow-x: scroll;
+}
+.conteudoCalendario::-webkit-scrollbar {
+  width: 12px;
+}
+.conteudoCalendario::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+.tabelaCalendario{
+  /* background-color: #ffffff79; */
+  border-radius: 15px;
+  margin: 10px auto;
+}
+.corpoTabela{
+  width: 100%;
+  margin: auto;
+  width: 100%;
+  background-color:#ffffff;
+}
+tr{
+  display: grid;
+  grid-template-columns: 400px 120px 120px;
+  border-left: #BFC8C5 solid 1px;
+  border-right: #BFC8C5 solid 1px;
+}
+tr:first-child{
+  border-top: #BFC8C5 solid 1px;
+}
+tr:last-child{
+  border-bottom: #BFC8C5 solid 1px;
+}
+.titulo{
+  font-weight: bold;
+  background-color: #8E9794;
+  color: #ffffff;
+}
+.evento, .nomeTitulo{ 
+  text-align: center;
+  padding: 5px;
+}
+.evento:nth-child(odd){
+  background-color: #dbdbdb;
+}
+.evento:nth-child(even){
+  background-color: #ffffff;
+}
+.descricao{
+  color: #303030;
+  text-align: left;
+}
+.dataInicio, .dataFim{
+  color: #FF7514;
+  font-weight: bold;
+}
+.atividade .descricao{
+  font-weight: 550;
+}
+.atividade .dataInicio, .atividade  .dataFim{
+  color: #004284;
+  font-weight: bold;
+}
