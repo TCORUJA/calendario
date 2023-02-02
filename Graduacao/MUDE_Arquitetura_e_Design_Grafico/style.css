@@ -109,7 +109,7 @@ ul{
 }
 tr{
   display: grid;
-  grid-template-columns: 400px 120px 120px;
+  grid-template-columns: 500px 120px 120px;
   border-left: #BFC8C5 solid 1px;
   border-right: #BFC8C5 solid 1px;
 }
