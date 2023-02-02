@@ -24,7 +24,7 @@ ul{
   margin: 0 auto;
   padding: 10px 25px;
 	background:url(img/background/BackgroundTopo2.png);
-  /* background-color: #FF7514; */
+  /* background-color: #EF7D00; */
   background-size: cover;
   background-position: center;
 }
@@ -47,10 +47,10 @@ ul{
   border-radius: 10px;
 }
 #linkMenuSimulador{
-  background: #FF7514;
+  background: #EF7D00;
 }
 #linkMenuCalendario{
-  background: #FF7514;
+  background: #EF7D00;
 }
 .linkMenu{
   margin: auto 20px;
@@ -129,7 +129,7 @@ tr:last-child{
   padding: 5px;
 }
 .evento:nth-child(odd){
-  background-color: #dbdbdb;
+  background-color: #eaeaea;
 }
 .evento:nth-child(even){
   background-color: #ffffff;
@@ -139,13 +139,13 @@ tr:last-child{
   text-align: left;
 }
 .dataInicio, .dataFim{
-  color: #FF7514;
+  color: #EA5A33;
   font-weight: bold;
 }
 .atividade .descricao{
   font-weight: 550;
 }
 .atividade .dataInicio, .atividade  .dataFim{
-  color: #004284;
+  color: #004070;
   font-weight: bold;
 }
