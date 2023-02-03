@@ -32,16 +32,11 @@
         <h3 class="conteudoNomeAV" id="conteudoNomeParte1"><span class="nomeAV" id="nomeParte1">Média</span></h3>
       </div>
       <div class="conteudoAV" id="conteudoParte1">
-        <label class="nomeAP" for="atividade1">Escrita e Reflexão: <input class="notaAP" id="atividade1" name="atividade1" type="text" value="" title="Vale até 2 pontos" autofocus/></label>
-        <label class="nomeAP" for="atividade2">Questionário: <input class="notaAP" id="atividade2" name="atividade2" type="text" value="" title="Vale até 2,5 pontos"/></label>
-        <label class="nomeAP" for="atividade3">Prova Regular (presencial): <input class="notaAP" id="atividade3" name="atividade3" type="text" value="" title="Vale até 5,5 pontos"/></label>
+        <label class="nomeAP" for="atividade1">Avaliação 1 <input class="notaAP" id="atividade1" name="atividade1" type="text" value="" title="Vale até 10 pontos" autofocus/></label>
+        <label class="nomeAP" for="atividade2">Avaliação 2 <input class="notaAP" id="atividade2" name="atividade2" type="text" value="" title="Vale até 10 pontos"/></label>
+        <label class="nomeAP" for="atividade3">Avaliação 3 <input class="notaAP" id="atividade3" name="atividade3" type="text" value="" title="Vale até 10 pontos"/></label>
 
         <input class="btCalcular" id="btCalcularSimulador" type="button" onclick="calcularParte1()" value="Calcular"/>
-      </div>
-      <div class="conteudoMediaAV" id="conteudoMediaParte1">
-        <label class="conteudoNomeAP" id="conteudoResultadoParte1"><span class="nomeAP" id="resultadoNomeParte1">Média:
-            <input class="notaAP" id="resultadoParte1" name="resultadoParte1" type="text" value=""
-              readonly="readonly" /></span></label>
       </div>
     </div>
 
@@ -53,31 +48,6 @@
         <label class="situacao" for="situacaoMediaFinal1"><input class="nomeSituacao" id="situacaoMediaFinal1" type="text" value="" readonly="readonly" /></label>
         
       </div>
-    </div>  
-
-    <div class="divisaoAV" id="divisaoMediaFinal2">
-      <div class="conteudoNomeAV">
-        <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal2"><span class="nomeAV" id="nomeMediaFinal2">Média Final</span></h3>
-      </div>
-      <div class="conteudoAV" id="conteudoMediaFinal2">
-        <label class="nomeAP" for="mediaFinal1" id="nomemediaFinal1">Média: <input class="notaAP" id="mediaFinal1" name="mediaFinal1" type="text" value=""/></label>
-        <label class="nomeAP" for="atividade4" id="nomeatividade4">Prova Substitutiva: <input class="notaAP" id="atividade4" name="atividade4" type="text" value="" title="Vale até 10 pontos"/></label>
-
-        <input class="btCalcular" id="btCalcularSimulador" type="button" onclick="calcularMediaFinal2()" value="Calcular" />
-      </div>
-      <div class="conteudoMediaAV" id="conteudoMediaFinal2">
-        <label class="conteudoNomeAP" id="conteudoResultadoMediaFinal2"><span class="nomeAP" id="resultadoNomeMediaFinal2">Média Final: <input class="notaAP" id="resultadoMediaFinal2" name="resultadoMediaFinal2" type="text" value="" readonly="readonly" /></span></label>
-      </div>
-    </div>
-
-    <div class="divisaoAV" id="divisaoMediaFinal2Situacao">
-      <div class="conteudoNomeAV">
-        <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal2Situacao"><span class="nomeAV" id="nomeMediaFinal2Situacao">Situação</span></h3>
-      </div>
-      <div class="conteudoAV" id="conteudoMediaFinal2Situacao">
-        <label class="situacao" for="situacaoMediaFinal2"><input class="nomeSituacao" id="situacaoMediaFinal2" type="text" value="" readonly="readonly" /></label>
-      </div>
-    </div>
     </div>
     <br />
     <hr />
@@ -114,36 +84,24 @@
           <tbody>
             <tr class="conteudoTabelaAV conteudoTabelaAV1">
               <th rowspan="3">Média</th>
-              <td>Escrita e Reflexão</td>
-              <td>0 a 2 pontos</td>
-              <td rowspan="3" class="colunaCalculo">Escrita e Reflexão + Questionário + AR</td>
+              <td>Avaliação 1</td>
+              <td>0 a 10 pontos</td>
+              <td rowspan="3" class="colunaCalculo">Avaliação 1 + Avaliação 2 + Avaliação 3</td>
             </tr>
-            <tr class="conteudoTabelaAV conteudoTabelaAV1">
-              <td>Questionário</td>
-              <td>0 a 2,5 pontos</td>
-            </tr>
-            <tr class="conteudoTabelaAV conteudoTabelaAV1">
-              <td>Prova Regular (AR) <span class="obs"> (Presencial)</span></td>
-              <td>0 a 5,5 pontos</td>
-            </tr>
-
             <tr class="conteudoTabelaAV conteudoTabelaAV2">
-              <th>Média Final</th>
-              <td>Prova Substitutiva (AS)</td>
-              <td>0 a 5,5 pontos</td>
-              <td class="colunaCalculo">Escrita e Reflexão + Questionário + Prova Substitutiva</td>
+              <td>Avaliação 2</td>
+              <td>0 a 10 pontos</td>
+            </tr>
+            <tr class="conteudoTabelaAV conteudoTabelaAV1">
+              <td>Avaliação 3</td>
+              <td>0 a 10 pontos</td>
             </tr>
         </table>
 
         <div class="RegrasAprovacao">
-          <p><b>Média =</b> Escrita e Reflexão + Questionário + AR.</p>
+          <p><b>Média =</b> Avaliação 1 + Avaliação 2 + Avaliação 3.</p>
           <p class="recuo">Igual ou maior que 6,0: Aprovado(a);</p>
-          <p class="recuo">Igual ou menor que 5,9: deve realizar a prova substitutiva.</p>
-          <br>
-          <br>
-          <p><b>Média com Prova Substitutiva =</b> Escrita e Reflexão + Questionário + AS.</p>
-          <p class="recuo">Substituiu a nota da prova regular, vale a maior nota.</p>
-        </div>
+          <p class="recuo">Igual ou menor que 5,9: Reprovado(a).</p>
       </div>
     </div>
   </section>
