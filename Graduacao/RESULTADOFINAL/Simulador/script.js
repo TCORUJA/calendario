@@ -11,11 +11,11 @@ function calcularParte1(){
     var atividade3 = parseFloat(document.getElementById('atividade3').value.replace(",",".").replace("","0"));
 
     /*--aceitar os valores das notas certo--*/
-    if (atividade1 <= 10 && atividade2 <= 10 && atividade3 <= 10){
+    if (atividade1 <= 2 && atividade2 <= 3 && atividade3 <= 5){
         /*--Calcular as notas colocadas pelo aluno e colocar no campo Parte1--*/
 
         /*--Condição da média do aluno--*/
-        var resultado = ((atividade1 * 2) + (atividade2 * 3) + (atividade3 * 5)) / 10;
+        var resultado = atividade1 + atividade2 + atividade3;
         var resultadoDecimal = Math.trunc(resultado * 10) / 10;
  
      if (resultadoDecimal >= 6) {
@@ -27,26 +27,26 @@ function calcularParte1(){
         document.getElementById('situacaoMediaFinal1').style.color = "#c52010";
      }
     }
-    else if (atividade1 > 10 && atividade2 > 10 && atividade3 > 10){
-        window.alert("Verifique se as notas de: \n\nAvaliação 1 está entre 0 e 10\nAvaliação 2 está entre 0 e 10\nAvaliação 3 está entre 0 e 10");
+    else if (atividade1 > 2 && atividade2 > 3 && atividade3 > 5){
+        window.alert("Verifique se as notas de: \n\nAvaliação 1 está entre 0 e 2\nAvaliação 2 está entre 0 e 3\nAvaliação 3 está entre 0 e 5");
     }
-    else if (atividade1 > 10 && atividade2 > 10){
-        window.alert("Verifique se as notas de: \n\nAvaliação 1 está entre 0 e 10\nAvaliação 2 está entre 0 e 10");
+    else if (atividade1 > 2 && atividade2 > 3){
+        window.alert("Verifique se as notas de: \n\nAvaliação 1 está entre 0 e 2\nAvaliação 2 está entre 0 e 3");
     }
-    else if (atividade1 > 10 && atividade3 > 10){
-        window.alert("Verifique se as notas de: \n\nAvaliação 1 está entre 0 e 10\nAvaliação 3 está entre 0 e 10");
+    else if (atividade1 > 2 && atividade3 > 5){
+        window.alert("Verifique se as notas de: \n\nAvaliação 1 está entre 0 e 2\nAvaliação 3 está entre 0 e 5");
     }
-    else if (atividade2 > 10 && atividade3 > 10){
-        window.alert("Verifique se as notas de: \nAvaliação 2 está entre 0 e 10\nAvaliação 3 está entre 0 e 10");
+    else if (atividade2 > 3 && atividade3 > 5){
+        window.alert("Verifique se as notas de: \nAvaliação 2 está entre 0 e 3\nAvaliação 3 está entre 0 e 5");
     }
-    else if (atividade1 > 10){
-        window.alert("Verifique se a nota de Avaliação 1 está entre 0 e 10");
+    else if (atividade1 > 2){
+        window.alert("Verifique se a nota de Avaliação 1 está entre 0 e 2");
     }
-    else if (atividade2 > 10){
-        window.alert("Verifique se a nota de Avaliação 2 está entre 0 e 10");
+    else if (atividade2 > 3){
+        window.alert("Verifique se a nota de Avaliação 2 está entre 0 e 3");
     }
-    else if (atividade3 > 10){
-        window.alert("Verifique se a nota de Avaliação 3 está entre 0 e 10");
+    else if (atividade3 > 5){
+        window.alert("Verifique se a nota de Avaliação 3 está entre 0 e 5");
     }
     
 
