@@ -75,8 +75,12 @@ function calcularMediaFinal2(){
     var atividade2 = parseFloat(document.getElementById('atividade2').value.replace(",",".").replace("","0"));
     var atividade3 = parseFloat(document.getElementById('atividade3').value.replace(",",".").replace("","0"));
     var atividade4 = parseFloat(document.getElementById('atividade4').value.replace(",",".").replace("","0"));
+    var mediaFinal1 = parseFloat(document.getElementById('mediaFinal1').value.replace(",",".").replace("","0"));
 
-    if(atividade4 <= atividade3){
+    if(mediaFinal1 != ""){
+        var soma = mediaFinal1 + atividade4;        
+    }
+    else if(atividade4 <= atividade3){
         var soma = atividade1 + atividade2 + atividade3;
         var somaDecimal = Math.trunc(soma * 100) / 100;
     
@@ -107,8 +111,17 @@ function calcularMediaFinal2(){
         document.getElementById('resultadoMediaFinal2').value = somaDecimal.toString().replace(".", ",");
 
     }
+    else if (mediaFinal1 > 6 && atividade4 > 5.5){
+        window.alert("Verifique se as notas de: \n\n\Média está entre 0 e 6\n\Prova Substitutiva está entre 0 e 5,5");
+    }
+    else if (mediaFinal1 > 6){
+        window.alert("Verifique se a nota de Média está entre 0 e 6");
+    }
     else if (atividade4 > 5.5){
         window.alert("Verifique se a nota de Prova Substitutiva está entre 0 e 5,5");
+        document.getElementById('atividade4').value = "";
+        document.getElementById('resultadoMediaFinal2').value = "";
+        document.getElementById('situacaoMediaFinal2').value = "";
     }
     else if(atividade4 >= atividade3){
         var soma = atividade1 + atividade2;
@@ -123,12 +136,11 @@ function calcularMediaFinal2(){
      /*--Condição da média do aluno--*/
     var resultado = parseFloat(document.getElementById('resultadoMediaFinal2').value);
     var resultadoDecimal = Math.trunc(resultado * 100) / 100;
-
     if (resultadoDecimal >= 6) {
         document.getElementById('situacaoMediaFinal2').value = "Aprovado";
         document.getElementById('situacaoMediaFinal2').style.color = "#55cb50";
     }
-    else {
+    else if (resultadoDecimal <= 6){
         document.getElementById('situacaoMediaFinal2').value = "Reprovado";        
         document.getElementById('situacaoMediaFinal2').style.color = "#c52010";
     }

@@ -4,7 +4,7 @@
 }
 
 body{
-	background:url(../img/background/Background.png) repeat-x fixed;
+	background:url(../../0.Img/background/Background.png) repeat-x fixed;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -23,7 +23,7 @@ ul{
   width: 100%;
   margin: 0 auto;
   padding: 10px 25px;
-	background:url(../img/background/BackgroundTopo2.png);
+	background:url(../../0.Img/background/BackgroundTopo.png);
   /* background-color: #EF7D00; */
   background-size: cover;
   background-position: center;
@@ -351,11 +351,11 @@ display: none;
   width: 97%;
   margin: 20px auto;
   padding: 20px;
-	/* background:url(../img/Background.png) repeat-x fixed;
+	/* background:url(../../0.Img/Background.png) repeat-x fixed;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden; */
-  background-color: #f7f7f7;
+  background-color: #f5f6f6;
   border: 1px solid #8E9794;
 }.conteudoDecricaoExibir{
   display: grid;
@@ -366,7 +366,7 @@ display: none;
 #conteudoNomeInformacao{
   position: absolute;
   top: 0;
-	background:url(../img/background/BackgroundTopo2.png);
+	background:url(../../0.Img/background/BackgroundTopo.png);
   /* background-color: #EF7D00; */
   background-size: cover;
   background-position: center;
@@ -417,9 +417,10 @@ th,td{
 
 .regrasAprovacao{
   margin-top: 20px;
-  padding: 20px 5px;
+  padding: 20px 10px;
   border: 1px solid #F5C200;
-  border-radius: 5px;
+  background-color: #ffffff;
+  border-radius: 1px;
 }
 .regrasAprovacao p{
   padding: 2px;
@@ -439,13 +440,15 @@ th,td{
 .descricaoRegrasAprovacao{
   padding: 5px 20px;
 }
+.descricaoRegrasAprovacaoTexto{
+  padding: 10px 0px;
+}
 .nomeRegrasAprovacao{
   font-size: 18px;
   color: #EF7D00;
 }
 .recuo{
   text-indent: 16px;
-  margin-top: 5px;
 }
 
 @media only screen and (max-width: 555px){

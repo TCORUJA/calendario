@@ -4,7 +4,7 @@
 }
 
 body{
-	background:url(img/background/Background.png) repeat-x fixed;
+	background:url(../0.Img/background/Background.png) repeat-x fixed;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -23,7 +23,7 @@ ul{
   width: 100%;
   margin: 0 auto;
   padding: 10px 25px;
-	background:url(img/background/BackgroundTopo2.png);
+	background:url(../0.Img/background/BackgroundTopo.png);
   /* background-color: #EF7D00; */
   background-size: cover;
   background-position: center;
@@ -97,9 +97,10 @@ ul{
 }
 
 .tabelaCalendario{
-  /* background-color: #ffffff79; */
-  border-radius: 15px;
   margin: 10px auto;
+  border-radius: 1px;
+  background-color: #ffffff;
+  padding: 10px;
 }
 .corpoTabela{
   width: 100%;
@@ -108,34 +109,31 @@ ul{
   background-color:#ffffff;
 }
 tr{
-  display: grid;
-  grid-template-columns: 500px 120px 120px;
-  border-left: #BFC8C5 solid 1px;
-  border-right: #BFC8C5 solid 1px;
+  border: #ffffff solid 1px;
 }
-tr:first-child{
-  border-top: #BFC8C5 solid 1px;
-}
-tr:last-child{
-  border-bottom: #BFC8C5 solid 1px;
+td{
+  padding: 5px;
 }
 .titulo{
   font-weight: bold;
-  background-color: #8E9794;
+  background-color: #666666;
   color: #ffffff;
 }
 .evento, .nomeTitulo{ 
   text-align: center;
   padding: 5px;
 }
+.nomeTitulo{
+  padding: 5px 10px;
+}
 .evento:nth-child(odd){
-  background-color: #eaeaea;
+  background-color: #E0E0E0;
 }
 .evento:nth-child(even){
-  background-color: #ffffff;
+  background-color: #F0F0F0;
 }
 .descricao{
-  color: #303030;
+  color: #000000;
   text-align: left;
 }
 .dataInicio, .dataFim{
